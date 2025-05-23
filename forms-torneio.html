@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneio de Ciclismo</title>
+</head>
+<body>
+    <section>
+        <h1>Torneio de Ciclismo</h1>
+        <h4>Insira suas informações para se inscrever do torneio:</h4>
+    </section>
+
+    <section>
+        <form action="processo_inscricao.php" method="post">
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="datanascimento">Data de nascimento:</label><br>
+            <input type="date" id="datanascimento" name="idade" required><br><br>
+
+            <label for="modalidade">Modalidade:</label><br>
+            <input type="radio" id="modalidade1" name="modalidade" value="mountain bike"> <label for="modalidade1">Mountain Bike</label> 
+            <input type="radio" id="modalidade2" name="modalidade" value="ciclismoestrada"> <label for="modalidade2"> Ciclismo de estrada</label> <br><br>  
+
+
+            <label for="categoria">Experiência:</label><br>
+            <input type="radio" id="iniciante" name="cate   goria" value="iniciante"> Iniciante<br>
+            <input type="radio" id="intermediario" name="categoria" value="intermediario"> Intermediario<br>
+            <input type="radio" id="avancado" name="categoria" value="avancado"> Avançado<br><br>
+
+
+            <input type="checkbox" id="termos" name="termosli"> <label for="checkbox_li">Declaro que li os termos e condições</label> <br>
+            <input type="checkbox" id="termos" name="termosaceito"> <label for="checkbox_aceito">Declaro que aceito os termos e condições</label> <br><br>
+
+            <label for="alimentacao">Interesse em Alimentação:</label><br>     
+            <input type="text" id="alimentacao" name="alimentacao"  placeholder="Precisarei de aguá,energético..." required><br><br>
+
+            <br><br>
+            
+            <input type="submit" value="Enviar">
+
+        </form>
+        
+    </section>
+</body>
+</html>
